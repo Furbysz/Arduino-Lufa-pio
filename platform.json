@@ -2,7 +2,7 @@
   "version": "1.0.0",
   "title": "LUFA",
   "description": "Lightweight USB Framework for AVRs",
-  "homepage": "https://github.com/Furbysz/lufa",
+  "homepage": "https://github.com/Furbysz/Arduino-Lufa-pio",
   "license": "MIT",
   "engines": {
     "platformio": ">=5.0.0"
