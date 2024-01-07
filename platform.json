@@ -1,36 +1,18 @@
 {
-  "name": "arduinolufa",
-  "title": "ArduinoLUFA",
-  "description": "Lightweight Usb For AVRs",
-  "homepage": "https://github.com/Furbysz/Arduino-Lufa-pio",
+  "version": "1.0.0",
+  "title": "LUFA",
+  "description": "Lightweight USB Framework for AVRs",
+  "homepage": "https://github.com/Furbysz/lufa",
   "license": "MIT",
-  "keywords": ["keyword_1", "keyword_N"],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Furbysz/Arduino-Lufa-pio"
+  "engines": {
+    "platformio": ">=5.0.0"
   },
-  "version": "0.0.0",
-  "frameworks": {
-    "arduinolufa": {
-      "package": "framework-arduinolufa",
-      "script": "builder/frameworks/arduinolufa.py"
+  "frameworks": ["arduino"],
+  "packages": [
+    {
+      "name": "framework-lufa",
+      "version": "1.0.0",
+      "url": "file://./framework-lufa.tar.gz"
     }
-  },
-  "packages": {
-    "toolchain-gccarmnoneeabi": {
-      "type": "toolchain",
-      "owner": "platformio",
-      "version": ">=1.40803.0,<1.40805.0"
-    },
-    "framework-arduinolufa": {
-      "type": "framework",
-      "optional": true,
-      "version": "~1.117.0"
-    },
-    "tool-direct-vcs-url": {
-      "type": "uploader",
-      "optional": true,
-      "version": "https://github.com/user/repo.git"
-    }
-  }
+  ]
 }
